@@ -17,3 +17,9 @@ model Video {
   transcription String?
   createdAt     DateTime @default(now())
 }
+
+model Prompt {
+  id       String @id @default(uuid())
+  title    String
+  template String
+}
